@@ -1,0 +1,29 @@
+{
+  "name": "test-app-vue",
+  "version": "0.0.2",
+  "private": true,
+  "scripts": {
+    "serve:ui": "vue-cli-service serve --open --port 3002",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@drizzle/store": "^1.5.1",
+    "@drizzle/vue-plugin": "^0.1.1",
+    "prettier": "^1.18.2",
+    "vue": "^2.6.10",
+    "vue-toasted": "^1.1.27",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    "@vue/cli-service": "^3.8.4",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.6.4",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
