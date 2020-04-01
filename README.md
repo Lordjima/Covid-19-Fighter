@@ -10,6 +10,14 @@ L'application a pour but de :<br>
 - Tous les échanges et autorisations se passeront à travers un Token unique fait par vos soins.
 
 <b>Outils technologiques</b> :
-- Truffle
-- Ganache
-- Drizzle
+<b>Truffle suite</b>
+- Truffle (Smart Contract maker)
+- Ganache (One click blockchain)
+- Drizzle (FrontEnd)
+
+Installation requise :
+- Yarn (https://classic.yarnpkg.com/fr/docs/install/#windows-stable)
+- NodeJS (https://nodejs.org/en/download)
+- Lerna (yarn global add lerna)
+- Ganache-cli (yarn global add ganache-cli)
+- Truffle (yarn global add truffle)
