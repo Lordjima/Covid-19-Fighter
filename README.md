@@ -1,5 +1,5 @@
 # Covid-19-Fighter
-Projet pour aider les institutions médicales dans leur gestion de la crise.
+Projet pour aider les institutions médicales dans leur gestion de la crise contre la pandémie du covid-19.
 
 L'application a pour but de :<br>
 - Partager les informations de leurs patients.<br>
