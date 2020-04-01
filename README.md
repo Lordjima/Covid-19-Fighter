@@ -15,7 +15,7 @@ L'application a pour but de :<br>
 - Ganache (One click blockchain)
 - Drizzle (FrontEnd)
 
-Installation requise :
+<b>Installation requise</b> :
 - Yarn (https://classic.yarnpkg.com/fr/docs/install/#windows-stable)
 - NodeJS (https://nodejs.org/en/download)
 - Lerna (yarn global add lerna)
