@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/synbioz/go_api/config"
+	"github.com/Lordjima/Covid-19-Fighter/back/config"
 	"log"
 	"time"
 )

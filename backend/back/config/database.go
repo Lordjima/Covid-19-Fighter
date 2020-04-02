@@ -2,17 +2,30 @@ package config
 
 import (
 	"database/sql"
-	_ "github.com/lib/pq"
+	"fmt"
+	_ "github.com/lib/pq" //jutified
 	"log"
 )
 
 var db *sql.DB
 
+const (
+	host     = "0.0.0."
+	port     = 5432
+	user     = "unicorn_user"
+	password = "magical_password"
+	dbname   = "postgres"
+)
+
 //DatabaseInit init db
 func DatabaseInit() {
 	var err error
 
-	db, err = sql.Open("postgres", "user=theodelaune dbname=goapi")
+	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s "+
+		"password=%s dbname=%s sslmode=disable",
+		host, port, user, password, dbname)
+
+	db, err = sql.Open("postgres", psqlInfo)
 
 	if err != nil {
 		log.Fatal(err)
@@ -23,7 +36,7 @@ func DatabaseInit() {
 }
 
 func createCarsTable() {
-	_, err := db.Exec("CREATE TABLE IF NOT EXISTS cars(id serial,manufacturer varchar(20), design varchar(20), style varchar(20), doors int, created_at timestamp default NULL, updated_at timestamp default NULL, constraint pk primary key(id))")
+	_, err := db.Exec("CREATE TABLE IF NOT EXISTS patients(id serial,patientID varchar(255), patientAddr varchar(255), decryptKey varchar(255), created_at timestamp default NULL, updated_at timestamp default NULL, constraint pk primary key(id))")
 
 	if err != nil {
 		log.Fatal(err)
