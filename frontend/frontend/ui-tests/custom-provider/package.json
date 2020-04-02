@@ -14,7 +14,7 @@
     "access": "private"
   },
   "scripts": {
-    "serve:ui": "PORT=3003 react-scripts start",
+    "serve:ui": "set PORT=3003 && react-scripts start",
     "build": "react-scripts build",
     "test:ui": "react-scripts test",
     "eject": "react-scripts eject"
