@@ -14,5 +14,8 @@ func InitializeRouter() *mux.Router {
 	router.Methods("GET").Path("/patient/{id}").Name("Show").HandlerFunc(controllers.PatientShow)
 	router.Methods("PUT").Path("/patient/{id}").Name("Update").HandlerFunc(controllers.PatientUpdate)
 	router.Methods("DELETE").Path("/patient/{id}").Name("DELETE").HandlerFunc(controllers.PatientDelete)
+	router.Methods("POST").Path("/encrypt").Name("Create").HandlerFunc(controllers.EncryptEndpoint)
+	router.Methods("POST").Path("/decrypt").Name("Create").HandlerFunc(controllers.DecryptEndpoint)
+
 	return router
 }
